@@ -6,12 +6,17 @@ h1, h2 {
   margin-top: 0;
 }
 
+input, button, textarea, .slick-slide, .slider-block__button {
+  border-radius: 10px;
+}
+
 input:focus, button:focus, textarea:focus, .slick-slide:focus, .slider-block__button:focus {
   outline: none;
 }
 
 button {
   cursor: pointer;
+  border-radius: 10px;
 }
 
 .form {
@@ -177,7 +182,7 @@ button {
 }
 
 .slider-block__button:hover .slider-block__button_img {
-  background: url(../img/shopping-cart-hover.png) 0 0 no-repeat;
+  background: url(../img/shopping-cart-hover.svg) 0 0 no-repeat;
   transition: background 1.5s;
   transition: color 1.5s;
   transition: background-color 1.5s;
@@ -187,10 +192,10 @@ button {
   display: inline-block;
   vertical-align: middle;
   margin-right: 19px;
-  background: url(../img/shopping-cart.png) 0 0 no-repeat;
+  background: url(../img/shopping-cart.svg) 0 0 no-repeat;
   background-size: cover;
   width: 17px;
-  height: 16px;
+  height: 17px;
   transition: background 1.5s;
   transition: color 1.5s;
   transition: background-color 1.5s;
@@ -601,7 +606,7 @@ button {
 .materials-img {
   right: 50%;
   top: 0;
-  transform: translate(150%, -200px);
+  transform: translate(220%, 10px);
 }
 
 .tools {
@@ -617,7 +622,8 @@ button {
 .prototyping-img {
   right: 0;
   top: 0;
-  transform: translate(-8%, -100px);
+  transform: translate(-8%, -70px);
+  border-radius: 10px;
 }
 
 .order {
@@ -661,7 +667,7 @@ button {
 }
 
 .manual-bg {
-  background: #000 url(../img/manual/manual-bg.png) center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/manual/manual-bg.png) center no-repeat;
   background-size: cover;
 }
 
