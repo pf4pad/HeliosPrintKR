@@ -20,8 +20,6 @@
 			transform: translate(10%,-80px)
 			height: 300px
 
-
-
 @media (max-width: 1199px)
 	.main //Главная секция
 		.advantages
@@ -111,9 +109,6 @@
 		transform: translateX(0)
 		width: 96%
 
-
-
-
 @media (max-width: 991px)
 	button
 		cursor: default
@@ -124,7 +119,7 @@
 		height: 100%
 		width: 100%
 		z-index: 1
-		background: #000 url(../img/main/bg-main.png) center no-repeat
+		background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url(../img/main/bg-main.png) center no-repeat
 		background-size: cover
 		left: -100%
 		transition: all 0.5s
@@ -148,7 +143,7 @@
 			width: 100%
 			border-bottom: 1px solid rgba(#fff,.2)
 			cursor: default
-			&:hover			
+			&:hover
 			a
 				display: block
 				padding: 15px 0
@@ -163,6 +158,7 @@
 
 	.header //Хэдер
 		margin-bottom: 40px
+
 		&-logo
 			cursor: default
 		&-adress
@@ -170,7 +166,7 @@
 			margin-left: 20px
 			margin-bottom: 5px
 			&_email
-				margin-left: 9px
+				margin-left: 0
 				margin-bottom: 0
 				a:hover
 					color: $text-color-light
@@ -249,7 +245,7 @@
 		padding: 60px 0
 
 	.lego-img // Картинки с лего
-			display: none
+		display: none
 
 	.slider // Слайдер
 		&-block
@@ -265,7 +261,7 @@
 			&:hover
 				background: transparent url(../img/slider-arrow-left.png) 0 0 no-repeat
 				cursor: default
-			
+
 		&-right
 			transform: translateX(30px)
 			&:hover
@@ -306,7 +302,7 @@
 				text-align: left
 				margin: 0
 				&_order
-					cursor: default 
+					cursor: default
 					&:hover
 						color: $active-color
 
@@ -348,11 +344,12 @@
 				&:hover
 					color: $header-color
 
-
 @media (max-width: 767px)
 	.header // Хэдер
 		margin-bottom: 30px
 		&-logo
+			img
+				width: 100px
 		&-adress
 			margin-left: 5px
 			&_email
@@ -383,13 +380,13 @@
 				margin-bottom: 20px
 				padding-bottom: 20px
 				height: 51px
-				border-bottom: 1px solid	rgba(#fff,.15) 	
+				border-bottom: 1px solid	rgba(#fff,.15)
 				&__img
 					justify-content: center
 					margin-left: 25px
 					margin-right: 45px
-				&__text	
-					font-size: 16px	
+				&__text
+					font-size: 16px
 				&:last-child
 					margin-bottom: 20px
 				&_last
@@ -415,7 +412,7 @@
 	.section-title // Заголовок секций
 		h2
 			margin-bottom: 40px
-			font-size: 30px	
+			font-size: 30px
 
 	.slider // Слайдер
 		&-left
@@ -468,7 +465,6 @@
 			&:hover
 				color: $text-form-color
 
-
 @media (max-width: 576px)
 	.header // Хэдер
 		&-logo
@@ -478,9 +474,9 @@
 		&-contacts
 			&__phone
 				a
-						font-size: 21px
+					font-size: 21px
 			&__order
-				font-size: 14px	
+				font-size: 14px
 
 	.main // Главная секция
 		padding-bottom: 40px
@@ -493,13 +489,13 @@
 				margin-bottom: 40px
 				text-align: center
 				font-size: 17px
-			&-block	
+			&-block
 				&__img
 					justify-content: center
 					margin-left: 15px
 					margin-right: 25px
-				&__text	
-					font-size: 16px	
+				&__text
+					font-size: 16px
 
 	.form // Форма
 		&-main
@@ -512,7 +508,6 @@
 		.form
 			&-main
 				padding: 30px 15px
-
 
 	.section-title // Заголовок секций
 		h2
@@ -565,15 +560,9 @@
 		&-contacts
 			&__phone
 				a
-						font-size: 21px
+					font-size: 21px
 			&__order
-				font-size: 14px	
-
-
-
-
-
-
+				font-size: 14px
 
 @media (max-width: 425px)
 	.header // Хэдер
@@ -648,7 +637,6 @@
 		font-size: 14px
 		&__text
 			padding: 20px
-
 
 @media (max-width: 320px)
 	.header
