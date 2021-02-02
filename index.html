@@ -220,7 +220,7 @@
 								<input type="text" name="user_name" class="form-input" placeholder="Ваше имя" required>
 								<input type="tel" name="user_phone" class="form-input input-phone" placeholder="Контактный телефон"
 									required>
-								<textarea name="user_text" class="form-input form-textarea" placeholder="Какие материалы вам требуются?"
+								<textarea name="user_text" class="form-input form-textarea" placeholder="Какие товар вам необходим?"
 									cols="20" rows="3" required></textarea>
 								<button class="form-button" type="submit">Оставить заявку</button>
 								<div class="form-small">
@@ -1051,179 +1051,17 @@
 					});
 				});
 			</script> -->
-	<script>
-		$(document).ready(function () {
-			if ($(window).width() < 992) {
-				$('.show-order').on("click", function () {
-					$("body").toggleClass("lock");
-					$('.overlay').show();
-					$(".overlay").css("overflow", "scroll");
-				});
-				$('.popup_close').on("click", function () {
-					$("body").removeClass("lock");
-					$('.overlay').hide();
-				});
-			}
-			else {
-				$('.show-order').on("click", function () {
-					$('.overlay').show();
-				});
-				$('.popup_close').on("click", function () {
-					$('.overlay').hide();
-				});
-			};
-		});
-	</script>
-	<script>
-		$(document).ready(function () {
-			if ($(window).width() < 992) {
-				$('.show-politic').on("click", function () {
-					$("body").toggleClass("lock");
-					$('.overlay-politic').show();
-					$(".overlay-politic").css("overflow", "scroll");
-				});
-				$('.popup_close-politic').on("click", function () {
-					$("body").removeClass("lock");
-					$('.overlay-politic').hide();
-				});
-			}
-			else {
-				$('.show-politic').on("click", function () {
-					$('.overlay-politic').show();
-				});
-				$('.popup_close-politic').on("click", function () {
-					$('.overlay-politic').hide();
-				});
-			};
-		});
-	</script>
-	<script>
-		$(document).ready(function () {
-			var link = $('.menu-link');
-			var link_active = $('.menu-link_active');
-			var nav_link = $('.menu a');
-			var menu = $('.nav-menu');
-			link.click(function () {
-				link.toggleClass('menu-link_active');
-				menu.toggleClass('nav-menu_active');
-				$("body").toggleClass("lock");
-				$(".nav-menu_active").css("overflow-y", "auto");
-			});
-			link_active.click(function () {
-				link.removeClass('menu-link_active');
-				menu.removeClass('nav-menu_active');
-				$(".nav-menu_active").css("overflow-y", "hidden");
-				$("body").removeClass("lock");
-			});
-			nav_link.click(function () {
-				link.removeClass('menu-link_active');
-				menu.removeClass('nav-menu_active');
-				$("body").removeClass("lock");
-
-			});
-		});
-	</script>
-	<script>
-		$('.slider').slick({
-			arrows: true,
-			slidesToShow: 4,
-			slidesToScroll: 1,
-			draggable: false,
-			swipe: false,
-			prevArrow: '<div class="slider-left"></div>',
-			nextArrow: '<div class="slider-right"></div>',
-			responsive: [
-				{
-					breakpoint: 1200,
-					settings: {
-						slidesToShow: 3,
-						arrows: true,
-					}
-				},
-				{
-					breakpoint: 992,
-					settings: {
-						slidesToShow: 2,
-						swipe: true,
-						arrows: true,
-						autoplay: false,
-						infinite: true,
-					}
-				},
-				{
-					breakpoint: 768,
-					settings: {
-						slidesToShow: 1,
-						swipe: true,
-						arrows: true,
-						autoplay: false,
-						infinite: true,
-					}
-				}
-			]
-		});
-		$('.slider-block__img').slick({
-			dots: true,
-			arrows: false,
-			swipe: true,
-			infinite: true,
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			responsive: [
-				{
-					breakpoint: 992,
-					settings: {
-						swipe: false,
-						autoplay: false,
-						arrows: false,
-						dots: false,
-						infinite: true,
-					}
-				}]
-		});
-	</script>
-	<script>
-		$(document).ready(function () {
-			var arrow_1 = $('.manual-arrow_1');
-			var arrow_2 = $('.manual-arrow_2');
-			var arrow_3 = $('.manual-arrow_3');
-			var manual_img = $('.manual-block__img');
-			manual_img.hover(function () {
-				arrow_1.toggleClass('manual-arrow_1-active');
-				arrow_2.toggleClass('manual-arrow_2-active');
-				arrow_3.toggleClass('manual-arrow_3-active');
-			});
-		});
-	</script>
-	<script src="js/jquery.maskedinput.min.js"></script>
-	<script>
-		$(document).ready(function () {
-			$(".input-phone").mask("+7 (999) 999-9999", { autoclear: false });
-		});
-	</script>
-	<script>
-		$('form').submit(function (event) {
-			event.preventDefault();
-			$.ajax({
-				type: "POST",
-				url: "mailer/smart.php",
-				data: $(this).serialize()
-			}).done(function () {
-				$(this).find("input").val("");
-				$('.overlay').hide()
-				$('.overlay-message').show()
-				setTimeout(function () {
-					$(".overlay-message").hide();
-				}, 3000);
-				$("form").trigger("reset");
-			});
-			return false;
-		});
-		$(document).ready(function () {
-
-		});
-	</script>
 	<script src="js/wow.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/main.js">
+	</script>
+
+
+
+	<script>
+
+	</script>
+
 	<script>
 		new WOW().init();
 	</script>
