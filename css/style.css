@@ -586,6 +586,18 @@ button {
   color: #fffafa;
 }
 
+.advantages-subtitle ul {
+  list-style: none;
+  list-style-image: url("/img/main/list.png");
+}
+
+.advantages-subtitle ul::before {
+  content: '';
+  height: 20px;
+  width: 20px;
+  background: url("");
+}
+
 .advantages-block {
   display: flex;
   font-size: 15px;
@@ -1344,7 +1356,6 @@ button {
     padding-bottom: 60px;
   }
   .main .advantages-title h1 {
-    color: #f5f900;
     font-size: 28px;
   }
   .main .advantages-subtitle {
@@ -1470,7 +1481,6 @@ button {
   }
   .main .advantages-subtitle {
     margin-bottom: 40px;
-    text-align: center;
     font-size: 17px;
   }
   .main .advantages-block__img {
