@@ -591,13 +591,6 @@ button {
   list-style-image: url("/img/main/list.png");
 }
 
-.advantages-subtitle ul::before {
-  content: '';
-  height: 20px;
-  width: 20px;
-  background: url("");
-}
-
 .advantages-block {
   display: flex;
   font-size: 15px;
