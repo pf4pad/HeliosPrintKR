@@ -3,7 +3,7 @@
 	font-size: 16px
 	&-bg
 		background-color: $bg-color-light
-	padding: 60px 0 55px 0
+		padding: 60px 0 0 0
 	&-block
 		text-align: center
 		&__img
@@ -19,8 +19,10 @@
 			width: 30px
 			height: 30px
 		&__text
+			&:hover
+				color: $footer-color
 			a
 				cursor: default
 				color: $text-color-dark
 				&:hover
-					color: $header-color
+					color: $footer-color

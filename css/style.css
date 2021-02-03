@@ -262,6 +262,15 @@ button {
   height: 31px;
 }
 
+.header-adress a {
+  cursor: default;
+  color: #fff;
+}
+
+.header-adress a:hover {
+  color: #f5f900;
+}
+
 .header-adress__icon {
   margin-right: 19px;
   margin-bottom: 3px;
@@ -577,6 +586,12 @@ button {
   color: #fffafa;
 }
 
+.advantages-subtitle ul li {
+  list-style: none;
+  list-style-image: url("/img/main/list.png");
+  list-style-position: inside;
+}
+
 .advantages-block {
   display: flex;
   font-size: 15px;
@@ -777,11 +792,11 @@ button {
 .contacts {
   font-family: 'ProximaNova-Light';
   font-size: 16px;
-  padding: 60px 0 55px 0;
 }
 
 .contacts-bg {
   background-color: #f9f9f9;
+  padding: 60px 0 0 0;
 }
 
 .contacts-block {
@@ -801,13 +816,17 @@ button {
   height: 30px;
 }
 
+.contacts-block__text:hover {
+  color: #2d6ca0;
+}
+
 .contacts-block__text a {
   cursor: default;
   color: #000;
 }
 
 .contacts-block__text a:hover {
-  color: #f5f900;
+  color: #2d6ca0;
 }
 
 .feedback {
@@ -826,7 +845,7 @@ button {
 }
 
 .feedback-text__click {
-  color: #f5f900;
+  color: #2d6ca0;
 }
 
 .feedback-text__click:hover {
@@ -835,6 +854,7 @@ button {
 
 .show-order {
   text-decoration: underline;
+  display: block;
 }
 
 .footer-bg {
@@ -890,7 +910,8 @@ button {
 .footer-contacts {
   display: flex;
   justify-content: flex-end;
-  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: right;
 }
 
 .footer-contacts__phone {
@@ -1043,7 +1064,7 @@ button {
     height: 100%;
     width: 100%;
     z-index: 1;
-    background: #000 url(../img/main/bg-main.png) center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/main/bg-main.png) center no-repeat;
     background-size: cover;
     left: -100%;
     transition: all 0.5s;
@@ -1098,7 +1119,7 @@ button {
     margin-bottom: 5px;
   }
   .header-adress_email {
-    margin-left: 9px;
+    margin-left: 0;
     margin-bottom: 0;
   }
   .header-adress_email a:hover {
@@ -1125,7 +1146,7 @@ button {
   .main .advantages-subtitle {
     margin-bottom: 40px;
     font-size: 20px;
-    text-align: center;
+    text-align: left;
   }
   .main .advantages-block {
     margin-left: 13px;
@@ -1300,6 +1321,9 @@ button {
   .header {
     margin-bottom: 30px;
   }
+  .header-logo img {
+    width: 100px;
+  }
   .header-adress {
     margin-left: 5px;
   }
@@ -1326,7 +1350,6 @@ button {
     padding-bottom: 60px;
   }
   .main .advantages-title h1 {
-    color: #f5f900;
     font-size: 28px;
   }
   .main .advantages-subtitle {
@@ -1452,7 +1475,6 @@ button {
   }
   .main .advantages-subtitle {
     margin-bottom: 40px;
-    text-align: center;
     font-size: 17px;
   }
   .main .advantages-block__img {

@@ -32,8 +32,11 @@
 									<img src="img/header-footer/header-label.png" class="header-adress__icon" alt="">
 									<!-- /.adress-icon -->
 									<div class="header-adress__text">
-										Украина, Днепропетровская область<br>
-										Кривой Рог, Пушкина, д.2
+										<a href="#contacts">
+											Украина, Днепропетровская область<br>
+											Кривой Рог, Пушкина, д.2
+										</a>
+
 									</div>
 									<!-- /.adress-text -->
 								</div>
@@ -101,8 +104,8 @@
 		<!-- Главная секция -->
 		<div class="main" id="main">
 			<div class="container">
-				<div class="row justify-content-md-center justify-content-xl-between align-items-lg-center">
-					<div class="col-12 col-lg-7 col-xl-7">
+				<div class="row justify-content--center justify-content-xl-between align-items-lg-center">
+					<div class="col-12 col-lg-7 col-xl-7 align-items-lg-start">
 						<div class="advantages">
 							<div class="advantages-title">
 								<h1>ГЕЛИОС-ПРИНТ не просто полиграфия.
@@ -112,7 +115,8 @@
 							<!-- /.advantages-title -->
 							<div class="advantages-subtitle">
 								<ul>
-									<li>Цифровая, ризографическая и широкоформатная печать.</li>
+									<li>Цифровая, ризографическая печать.</li>
+									<li>Широкоформатная печать.</li>
 									<li>Изготовлении
 										сувенирной продукции.</li>
 									<li>Hанесении на
@@ -217,7 +221,7 @@
 								<input type="text" name="user_name" class="form-input" placeholder="Ваше имя" required>
 								<input type="tel" name="user_phone" class="form-input input-phone" placeholder="Контактный телефон"
 									required>
-								<textarea name="user_text" class="form-input form-textarea" placeholder="Какие материалы вам требуются?"
+								<textarea name="user_text" class="form-input form-textarea" placeholder="Какие товар вам необходим?"
 									cols="20" rows="3" required></textarea>
 								<button class="form-button" type="submit">Оставить заявку</button>
 								<div class="form-small">
@@ -867,8 +871,10 @@
 		</div>
 		<!-- /.contacts  -->
 		<div class="map">
-			<script async
-				src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abc64111efa18e9cd45b67a4899437e2ea575494fa0d59ee70708c66b4397775f&amp;width=100%25&amp;height=417&amp;lang=ru_RU&amp;scroll=false"></script>
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2674.433347249844!2d33.34316041602662!3d47.90865197920582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dadf4d0e9e9855%3A0xc29f2e3506ed5ea1!2z0JPQldCb0IbQntChLdCf0KDQmNCd0KI!5e0!3m2!1sru!2sua!4v1612257894676!5m2!1sru!2sua"
+				width="100%" height="300px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+				tabindex="0"></iframe>
 		</div>
 	</div>
 	<!-- /.contacts-bg -->
@@ -928,7 +934,7 @@
 							</div>
 							<!-- /.footer-contacts__phone -->
 							<div class="footer-contacts__order show-order">
-								Заказать макетные запчасти
+								Заказать товар
 							</div>
 						</div>
 						<!-- /.footer-contacts -->
@@ -1046,179 +1052,17 @@
 					});
 				});
 			</script> -->
-	<script>
-		$(document).ready(function () {
-			if ($(window).width() < 992) {
-				$('.show-order').on("click", function () {
-					$("body").toggleClass("lock");
-					$('.overlay').show();
-					$(".overlay").css("overflow", "scroll");
-				});
-				$('.popup_close').on("click", function () {
-					$("body").removeClass("lock");
-					$('.overlay').hide();
-				});
-			}
-			else {
-				$('.show-order').on("click", function () {
-					$('.overlay').show();
-				});
-				$('.popup_close').on("click", function () {
-					$('.overlay').hide();
-				});
-			};
-		});
-	</script>
-	<script>
-		$(document).ready(function () {
-			if ($(window).width() < 992) {
-				$('.show-politic').on("click", function () {
-					$("body").toggleClass("lock");
-					$('.overlay-politic').show();
-					$(".overlay-politic").css("overflow", "scroll");
-				});
-				$('.popup_close-politic').on("click", function () {
-					$("body").removeClass("lock");
-					$('.overlay-politic').hide();
-				});
-			}
-			else {
-				$('.show-politic').on("click", function () {
-					$('.overlay-politic').show();
-				});
-				$('.popup_close-politic').on("click", function () {
-					$('.overlay-politic').hide();
-				});
-			};
-		});
-	</script>
-	<script>
-		$(document).ready(function () {
-			var link = $('.menu-link');
-			var link_active = $('.menu-link_active');
-			var nav_link = $('.menu a');
-			var menu = $('.nav-menu');
-			link.click(function () {
-				link.toggleClass('menu-link_active');
-				menu.toggleClass('nav-menu_active');
-				$("body").toggleClass("lock");
-				$(".nav-menu_active").css("overflow-y", "auto");
-			});
-			link_active.click(function () {
-				link.removeClass('menu-link_active');
-				menu.removeClass('nav-menu_active');
-				$(".nav-menu_active").css("overflow-y", "hidden");
-				$("body").removeClass("lock");
-			});
-			nav_link.click(function () {
-				link.removeClass('menu-link_active');
-				menu.removeClass('nav-menu_active');
-				$("body").removeClass("lock");
-
-			});
-		});
-	</script>
-	<script>
-		$('.slider').slick({
-			arrows: true,
-			slidesToShow: 4,
-			slidesToScroll: 1,
-			draggable: false,
-			swipe: false,
-			prevArrow: '<div class="slider-left"></div>',
-			nextArrow: '<div class="slider-right"></div>',
-			responsive: [
-				{
-					breakpoint: 1200,
-					settings: {
-						slidesToShow: 3,
-						arrows: true,
-					}
-				},
-				{
-					breakpoint: 992,
-					settings: {
-						slidesToShow: 2,
-						swipe: true,
-						arrows: true,
-						autoplay: false,
-						infinite: true,
-					}
-				},
-				{
-					breakpoint: 768,
-					settings: {
-						slidesToShow: 1,
-						swipe: true,
-						arrows: true,
-						autoplay: false,
-						infinite: true,
-					}
-				}
-			]
-		});
-		$('.slider-block__img').slick({
-			dots: true,
-			arrows: false,
-			swipe: true,
-			infinite: true,
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			responsive: [
-				{
-					breakpoint: 992,
-					settings: {
-						swipe: false,
-						autoplay: false,
-						arrows: false,
-						dots: false,
-						infinite: true,
-					}
-				}]
-		});
-	</script>
-	<script>
-		$(document).ready(function () {
-			var arrow_1 = $('.manual-arrow_1');
-			var arrow_2 = $('.manual-arrow_2');
-			var arrow_3 = $('.manual-arrow_3');
-			var manual_img = $('.manual-block__img');
-			manual_img.hover(function () {
-				arrow_1.toggleClass('manual-arrow_1-active');
-				arrow_2.toggleClass('manual-arrow_2-active');
-				arrow_3.toggleClass('manual-arrow_3-active');
-			});
-		});
-	</script>
-	<script src="js/jquery.maskedinput.min.js"></script>
-	<script>
-		$(document).ready(function () {
-			$(".input-phone").mask("+7 (999) 999-9999", { autoclear: false });
-		});
-	</script>
-	<script>
-		$('form').submit(function (event) {
-			event.preventDefault();
-			$.ajax({
-				type: "POST",
-				url: "mailer/smart.php",
-				data: $(this).serialize()
-			}).done(function () {
-				$(this).find("input").val("");
-				$('.overlay').hide()
-				$('.overlay-message').show()
-				setTimeout(function () {
-					$(".overlay-message").hide();
-				}, 3000);
-				$("form").trigger("reset");
-			});
-			return false;
-		});
-		$(document).ready(function () {
-
-		});
-	</script>
 	<script src="js/wow.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/main.js">
+	</script>
+
+
+
+	<script>
+
+	</script>
+
 	<script>
 		new WOW().init();
 	</script>
