@@ -588,7 +588,7 @@ button {
 
 .advantages-subtitle ul li {
   list-style: none;
-  list-style-image: url("/img/main/list.png");
+  list-style-image: url("../img/main/list.png");
   list-style-position: inside;
 }
 
