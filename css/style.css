@@ -240,6 +240,19 @@ button {
   background: transparent url(../img/slider-arrow-right-hover.png) 0 0 no-repeat;
 }
 
+.fixedbut {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: block;
+  background: #416ece;
+  border-radius: 10px;
+}
+
+.fixedbut:hover {
+  background: #222;
+}
+
 .header-bg {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/main/bg-main.png);
   background-position: center;
@@ -849,12 +862,8 @@ button {
 }
 
 .feedback-text__click:hover {
-  color: #000;
-}
-
-.show-order {
+  color: #b1c123;
   text-decoration: underline;
-  display: block;
 }
 
 .footer-bg {
