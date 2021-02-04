@@ -245,12 +245,15 @@ button {
   bottom: 20px;
   right: 20px;
   display: block;
-  background: #416ece;
-  border-radius: 10px;
+  border-radius: 50%;
+  z-index: 100;
+  width: 64px;
+  height: 64px;
+  background: #ffffff;
 }
 
 .fixedbut:hover {
-  background: #222;
+  background: #95afe7;
 }
 
 .header-bg {
@@ -885,7 +888,7 @@ button {
   display: -o-flex;
   display: flex;
   align-items: center;
-  height: 31px;
+  min-height: 31px;
 }
 
 .footer-adress_email {
@@ -1122,13 +1125,17 @@ button {
   .header-logo {
     cursor: default;
   }
+  .header-logo img {
+    width: 150px;
+  }
   .header-adress {
     width: 100%;
-    margin-left: 20px;
+    margin-left: 0;
     margin-bottom: 5px;
   }
   .header-adress_email {
-    margin-left: 0;
+    width: 100%;
+    margin-left: 10px;
     margin-bottom: 0;
   }
   .header-adress_email a:hover {
@@ -1309,6 +1316,13 @@ button {
   .footer-logo {
     cursor: default;
   }
+  .footer-logo img {
+    width: 150px;
+  }
+  .footer-adress {
+    padding: 0;
+    margin: 0;
+  }
   .footer-adress_email {
     margin-left: 3px;
   }
@@ -1337,7 +1351,7 @@ button {
     margin-left: 5px;
   }
   .header-adress_email {
-    margin-left: -5px;
+    margin-left: 5px;
   }
   .header-adress__icon {
     margin-right: 8px;
@@ -1437,7 +1451,11 @@ button {
   .feedback-text {
     font-size: 19px;
   }
+  .footer-logo img {
+    width: 100px;
+  }
   .footer-adress {
+    flex-basis: 400px;
     margin-left: 0;
   }
   .footer-adress__icon {
@@ -1446,6 +1464,13 @@ button {
   }
   .footer-adress__text {
     font-size: 12px;
+  }
+  .footer-contacts {
+    text-align: left;
+  }
+  .footer .container .row {
+    margin: 0;
+    padding: 0;
   }
   .message-popup {
     top: 100px;
@@ -1464,7 +1489,10 @@ button {
 
 @media (max-width: 576px) {
   .header-logo {
-    margin-left: 33px;
+    padding-left: 35px;
+  }
+  .header-logo img {
+    width: 75px;
   }
   .header-adress {
     display: none;
@@ -1562,6 +1590,9 @@ button {
   .header {
     margin-bottom: 22px;
   }
+  .header-logo {
+    padding-left: 35px;
+  }
   .header-contacts__phone a {
     font-size: 14px;
   }
@@ -1631,6 +1662,23 @@ button {
   }
   .politic-popup__text {
     padding: 20px;
+  }
+  .fixedbut {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: block;
+    border-radius: 50%;
+    z-index: 100;
+    width: 44px;
+    height: 44px;
+    background: #ffffff;
+  }
+  .fixedbut img {
+    width: 44px;
+  }
+  .fixedbut:hover {
+    background: #95afe7;
   }
 }
 

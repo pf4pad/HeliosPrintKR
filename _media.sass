@@ -161,13 +161,17 @@
 
 		&-logo
 			cursor: default
+		&-logo	img
+			width: 150px
 		&-adress
 			width: 100%
-			margin-left: 20px
+			margin-left: 0
 			margin-bottom: 5px
 			&_email
-				margin-left: 0
+				width: 100%
+				margin-left: 10px
 				margin-bottom: 0
+
 				a:hover
 					color: $text-color-light
 		&-contacts
@@ -329,7 +333,12 @@
 	.footer //Футер
 		&-logo
 			cursor: default
+		&-logo	img
+			width: 150px
+
 		&-adress
+			padding: 0
+			margin: 0
 			&_email
 				margin-left: 3px
 				a
@@ -354,7 +363,7 @@
 		&-adress
 			margin-left: 5px
 			&_email
-				margin-left: -5px
+				margin-left: 5px
 			&__icon
 				margin-right: 8px
 				width: 13px
@@ -446,14 +455,23 @@
 			font-size: 19px
 
 	.footer // Футер
+
+		&-logo	img
+			width: 100px
+
 		&-adress
+			flex-basis: 400px
 			margin-left: 0
 			&__icon
 				margin-right: 8px
 				width: 13px
 			&__text
 				font-size: 12px
-
+		&-contacts
+			text-align: left
+	.footer .container .row
+		margin: 0
+		padding: 0
 	.message-popup
 		top: 100px
 		left: 2%
@@ -468,7 +486,9 @@
 @media (max-width: 576px)
 	.header // Хэдер
 		&-logo
-			margin-left: 33px
+			padding-left: 35px
+		&-logo img
+			width: 75px
 		&-adress
 			display: none
 		&-contacts
@@ -567,6 +587,7 @@
 	.header // Хэдер
 		margin-bottom: 22px
 		&-logo
+			padding-left: 35px
 		&-contacts
 			&__phone
 				a
@@ -636,7 +657,20 @@
 		font-size: 14px
 		&__text
 			padding: 20px
-
+	.fixedbut
+		position: fixed
+		bottom: 20px
+		right: 20px
+		display: block
+		border-radius: 50%
+		z-index: 100
+		width: 44px
+		height: 44px
+		background: #ffffff
+	.fixedbut img
+		width: 44px
+	.fixedbut:hover
+		background: #95afe7
 @media (max-width: 320px)
 	.header
 		&-logo
