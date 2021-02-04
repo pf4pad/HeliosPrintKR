@@ -849,12 +849,8 @@ button {
 }
 
 .feedback-text__click:hover {
-  color: #000;
-}
-
-.show-order {
+  color: #b1c123;
   text-decoration: underline;
-  display: block;
 }
 
 .footer-bg {
