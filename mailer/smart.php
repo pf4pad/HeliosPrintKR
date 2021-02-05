@@ -13,13 +13,13 @@ $mail->CharSet = 'utf-8';
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.mail.ru';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'tot.samyj.994@mail.ru';                 // Наш логин
-$mail->Password = 'assassin666';                           // Наш пароль от ящика
+$mail->Username = 'pf4pad.fr';                 // Наш логин
+$mail->Password = 'rwbxvplovxogkkcy';                           // Наш пароль от ящика
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
  
-$mail->setFrom('tot.samyj.994@mail.ru', 'Тот Самый');   // От кого письмо 
-$mail->addAddress('maxklimov13@yandex.ru');     // Add a recipient
+$mail->setFrom('pf4pad.fr@gmail.com', 'Тот Самый');   // От кого письмо 
+$mail->addAddress('ninjamoq@meta.ua');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
@@ -33,7 +33,7 @@ $mail->Body    = '
 	Пользователь оставил свои данные <br> 
 	Имя: ' . $name . ' <br> 
 	Телефон: ' . $phone . ' <br> 
-	Какие требуются материалы: ' . $text . '';
+	Какие требуются товары: ' . $text . '';
 $mail->AltBody = 'Это альтернативный текст';
 
 if(!$mail->send()) {

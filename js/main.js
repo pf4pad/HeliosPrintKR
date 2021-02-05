@@ -1,4 +1,13 @@
 	$(document).ready(function () {
+			$('.show-order').on("click", function () {
+				$('.overlay').show()
+			});
+			$('.popup_close').on("click", function () {
+				$('.overlay').hide()
+			});
+		});
+	
+	$(document).ready(function () {
 			if ($(window).width() < 992) {
 				$('.show-order').on("click", function () {
 					$("body").toggleClass("lock");
